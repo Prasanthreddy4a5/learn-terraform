@@ -2,4 +2,4 @@
 
 # This repo is for learning Terraform
 
-###AWS
+AWS Terraform
