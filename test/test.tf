@@ -38,9 +38,9 @@ variable "Salaar" {
 }
 
 output "Sallar" {
-  value = "var.Salaar[Prabhas]"
+  value = var.Salaar[Prabhas]
 }
 
 output "Sallar_Collection" {
-  value = "var.Salaar[Collection]"
+  value = var.Salaar[Collection]
 }
