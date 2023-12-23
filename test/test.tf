@@ -14,5 +14,8 @@ variable "fruit_stock_with_price" {
 
 
 output "fruit_stock" {
-  value = "var.fruit_stock_with_price[apple].price"
+  value = var.fruit_stock_with_price[apple].stock
+}
+output "fruit_price" {
+  value = var.fruit_stock_with_price[apple].price
 }
