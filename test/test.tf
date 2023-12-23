@@ -12,9 +12,9 @@ variable "fruit_with_stock" {
   default = {
     apple = {
       stock = 100
+    }
     banana = {
       price = 25
-    }
     }
   }
 }
