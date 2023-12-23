@@ -12,6 +12,7 @@ variable "fruit_with_stock" {
   default = {
     apple = {
       stock = 100
+      value = 50
     }
     banana = {
       price = 25
@@ -20,7 +21,7 @@ variable "fruit_with_stock" {
 }
 
 output "fruit_stock" {
-  value  = try(var.fruit_with_stock["apple"].stock, 5)
+  value  = try(var.fruit_with_stock["apple"].value, 5)
 }
 
 output "fruit_stock_price" {
