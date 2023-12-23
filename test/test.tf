@@ -44,6 +44,6 @@ output "Sallar" {
 output "Sallar_Collection" {
   value = var.Salaar["Collection"]
 }
-output "Sallar_Collection" {
+output "Sallar_Collecion" {
   value = var.Salaar[each.key]
 }
