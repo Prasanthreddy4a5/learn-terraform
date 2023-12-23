@@ -41,6 +41,6 @@ output "Sallar" {
   value = "var.Salaar[Prabhas]"
 }
 
-output "Sallar" {
+output "Sallar_Collection" {
   value = "var.Salaar[Collection]"
 }
