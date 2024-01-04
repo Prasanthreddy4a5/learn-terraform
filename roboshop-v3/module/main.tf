@@ -9,14 +9,14 @@ resource "aws_instance" "instance" {
 
 }
 
-
-resource "aws_route53_record" "record" {
+resource "aws_route53_record" "dnsrecord" {
   zone_id = var.zone_id
   name    = "${var.name}-dev.prashdevops.online"
   type    = "A"
   ttl     = 30
   records = [ aws_instance.instance.private_ip ]
 }
+
 
 resource "null_resource" "ansible" {
 
