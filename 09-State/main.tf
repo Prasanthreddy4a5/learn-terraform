@@ -1,3 +1,9 @@
+provider "aws" {
+  region = "us-east-1"  # Replace with your desired AWS region
+}
+
+
+
 resource "aws_s3_bucket" "prash74_bucket" {
   bucket = "prash74"
 
