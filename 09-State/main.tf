@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "prash74_bucket" {
 
 terraform {
   backend "s3" {
-    bucket = "tf-state-prash74"
+    bucket = "prash74"
     key    = "09-state/terraform.tfstate"
     region = "us-east-1"
   }
