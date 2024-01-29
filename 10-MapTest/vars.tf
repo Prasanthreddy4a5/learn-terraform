@@ -28,6 +28,10 @@ variable "vpc" {
 output "public" {
   value = { for k, v in merge(var.vpc["main"]["subnets"]["public"]) : k => v }
 }
+
+output "app" {
+  value = { for k,v in var.vpc["main"]["subnets"]["app"] : k => v}
+}
 #
 #locals {
 #  public = { for k, v in merge(var.vpc["main"]["subnets"]["public"]) : k => v }
